@@ -1,0 +1,573 @@
+*{
+  margin:0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth; 
+}
+.nav {
+  background: linear-gradient(#f9fafa, #2e74c4, #201e1e);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza os itens verticalmente */
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  padding: 0 20px;
+}
+
+/* Botão "Solicite um Orçamento" */
+.left-menu {
+  position: absolute;
+  left: 20px; /* Alinha o botão à esquerda */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-orcamento {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2536d3; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orcamento:hover {
+  background-color: #394d6b;
+}
+
+/* Menu central */
+.nav-list {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  list-style: none; /* Remove marcadores */
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Faz o menu ocupar o espaço central */
+}
+
+.nav-list li {
+  margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.nav-list a:hover {
+  color: #ffffff; /* Cor ao passar o mouse */
+}
+
+/* Logo e nome da empresa */
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px; /* Alinha a logo à direita */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 50%; /* Torna a logo redonda */
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+/* FIM HEADER */
+
+.main {
+  width: 100%;
+  height: calc(80vh - 80px); /* Altura ajustada */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4%;
+  background-image: url(imagens/img6.png); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  max-width: 50%; /* Limita a largura do texto */
+}
+
+/* Título principal */
+.main h1 {
+  color: #031e38;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Parágrafo */
+.main p {
+  color:black;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Botão de chamada para ação */
+.call-to-action {
+  cursor: pointer;
+  background-color: #061853; /* Cor azul do botão */
+  color: white;
+  border: 0;
+  padding: 14px 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.call-to-action:hover {
+  transform: scale(1.1); /* Efeito de zoom no hover */
+  background-color: #005b96; /* Azul mais escuro no hover */
+}
+
+/* Links no botão */
+.main a {
+  text-decoration: none;
+  color: inherit; /* Mantém a cor do botão */
+}
+
+/*inicio serviços*/
+.services {
+  width: 100%;
+  height: 80px 0;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(#f9fafa, #2e74c4, #201e1e);
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid dos serviços */
+.service-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Cada item de serviço */
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Botão */
+.btn-solicitar {
+  background-color: #007BFF;
+  color: #fff;
+padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-solicitar:hover {
+  background-color: #0056b3;
+}
+
+
+/* FIM SERVIÇOS */
+
+/* Cada passo */
+
+.step img {
+  max-width: 100%;
+  height: 150%;
+  margin-top: 30px;
+}
+
+.step h3 {
+  font-size: 25px;
+  color:black;
+  margin-bottom: 30px;
+}
+
+.step p {
+  font-size: 14px;
+  color:black;
+  line-height: 1.6;
+}
+
+/* FIM DA ESTILIZAÇÃO DA SEÇÃO */
+/* Estilos gerais da seção */
+.about {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#f9fafa, #2e74c4);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+/* Estilização da imagem */
+.about-image {
+  position: relative;
+  max-width: 400px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 5px solid #ffffff;
+}
+
+/* Estilização do texto */
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1c2431;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #004c98;
+  margin-top: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+  width: 24px;
+  height: 24px;
+}
+/* INICIO RODAPE */
+/* Estilo geral do rodapé */
+.footer {
+  background: linear-gradient(#acb6b6, );
+  padding: 20px;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Informações de contato */
+.footer-info {
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-info span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Logo */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-logo p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #004c98;
+}
+
+/* Botão do WhatsApp */
+.footer-whatsapp .whatsapp-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.footer-whatsapp .whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .btn-orcamento {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .logo-container {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .main p {
+    font-size: 14px;
+  }
+
+  .call-to-action {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .service-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-item {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .how-it-works {
+    padding: 30px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+
+  .about-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info {
+    font-size: 12px;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .whatsapp-button {
+    font-size: 14px;
+    padding: 10px;
+    gap: 5px;
+  }
+}
+
+/* Estilos específicos para telas menores que 480px */
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 20px;
+  }
+
+  .main p {
+    font-size: 12px;
+  }
+
+  .btn-orcamento {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .call-to-action {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .step img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .service-item h3 {
+    font-size: 18px;
+  }
+
+  .service-item p {
+    font-size: 12px;
+  }
+
+  .footer-info {
+    font-size: 10px;
+  }
+}
